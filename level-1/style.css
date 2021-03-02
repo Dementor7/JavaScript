@@ -1,0 +1,27 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 10%;
+
+}
+h1 {
+    text-align: center;
+
+}
+button {
+    margin-left: 50%;
+    width: 100px;
+    border-radius: 50px;
+    border-color: cadetblue;
+    height: 5vh;
+
+}
+button:hover {
+    background: cornflowerblue;
+    
+}
