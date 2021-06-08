@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 20vh;
+        }
+
+        .container button {
+            margin-top: 10vh;
+            width: 200px;
+            height: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="main">back-color</h1>
+        <button id="btn"> click </button>
+    </div>
+
+
+
+    <script>
+
+        const a = document.getElementById('main')
+        const b = document.getElementById('btn')
+
+        let letters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'F']
+
+        b.addEventListener('click', function () {
+            a.innerText = 'red'
+            var hex = "#"
+            for (let i = 0; i < 6; i++) {
+                hex += letters[rand()]
+            }
+            a.innerText = 'back-color' + hex
+            document.body.style.backgroundColor = hex
+        })
+        const rand = () => Math.floor(Math.random() * letters.length)
+    </script>
+</body>
+</html>
